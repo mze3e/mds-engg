@@ -1,0 +1,7 @@
+dbt_nyc_parking:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/nyc_parking_violations.db
+      threads: 24
+  target: dev
